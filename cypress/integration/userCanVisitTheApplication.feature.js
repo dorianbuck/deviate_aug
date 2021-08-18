@@ -1,8 +1,8 @@
-context("user visits the application"),
+context("user visits the application",
   () => {
-    it("its expected to display a header"),
+    it("is expected to display a header",
       () => {
         cy.visit("/");
-        cy.get("h1").should("contain.text", addressBook);
-      };
-  };
+        cy.get("h1").should("contain.text", 'Address Book');
+      });
+  });
